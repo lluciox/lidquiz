@@ -31,13 +31,15 @@
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form" action="/pesquisar" method="post">
+			<form class="contact100-form validate-form" action="/book/quiz/public/pesquisar" method="post">
 				@csrf
 				<span class="contact100-form-title">
 					Atividade Avaliativa – Seguro Prestamista
-					<p class="contact100-form-title2">(Cada questão vale 1,0)</p>
+					<p class="contact100-form-title2">(Cada questão vale 1,0) -  <font color="red">Atenção com a Barra de Rolagem nas respostas</font> </p>
+
 					
 				</span>
+
 
 				@if(Session::has('success'))<div class="alert alert-success boxalert" role="alert">{{ Session::get('success') }}</div>@endif
 				@if(Session::has('danger'))<div class="alert alert-danger boxalert" role="alert">{{ Session::get('danger') }}</div>@endif
@@ -116,7 +118,7 @@
 
 
 			<div class="wrap-input100 input100-select">
-				<span class="label-input100">4-O contrato está em cobrança judicial e não podemos negociar, porém, o cliente quer acionar o seguro 	prestamista do seu contrato. Qual procedimento segui?</span>
+				<span class="label-input100">4-O contrato está em cobrança judicial e não podemos negociar, porém, o cliente quer acionar o seguro 	prestamista do seu contrato. Qual procedimento seguir?</span>
 				<div>
 					<select class="selection-2" name="Q4">
 						<option>Escolha a alternativa correta</option>
